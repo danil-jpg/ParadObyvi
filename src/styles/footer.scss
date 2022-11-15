@@ -5,11 +5,16 @@
     display: inline-block;
 }
 
-.footer__container {
-    width: 94%;
+.footer__content {
+    width: 94.5%;
+
     margin: 0 auto;
+    position: relative;
 }
 .footer__blocks-wr {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 9% 21.4% 39% 1fr 1fr;
 }
 .foooter__catalogue {
 }
@@ -21,6 +26,7 @@
     line-height: lh(12, 16);
     text-transform: uppercase;
     color: #ffffff;
+    margin-bottom: 19px;
 }
 .footer__item {
     font-family: "Montserrat";
@@ -28,12 +34,112 @@
     font-weight: 500;
     font-size: em(12);
     color: #ffffff;
+    margin-bottom: 15px;
 }
 .footer__customer {
+    justify-self: end;
 }
 .footer__logo-wr {
+    justify-self: center;
+    align-self: center;
+    transform: translate(0, -12px);
+    img {
+        height: 181px;
+        width: 181px;
+    }
 }
 .footer__graphic {
+    transform: translate(-12px);
+
+    .footer__title {
+        margin-bottom: 25px;
+    }
 }
 .footer__contacts {
+    transform: translate(-16px);
+    justify-self: end;
+
+    .footer__title {
+        text-align: right;
+        margin-bottom: 25px;
+    }
+    .footer__item {
+        margin-bottom: 25px;
+    }
+}
+
+.footer__btn {
+    border: 1px solid #ffffff;
+    height: 40px;
+    width: 183.85968017578125px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: lh(12, 16);
+    color: #ffffff;
+    position: absolute;
+    right: 17px;
+    box-sizing: border-box;
+    background-color: transparent;
+    text-align: center;
+    bottom: 34px;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: white;
+        color: black;
+    }
+}
+.footer__copy {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: em(12);
+    line-height: lh(12, 12);
+    text-align: center;
+    color: #ffffff;
+
+    margin-top: 9px;
+    margin-bottom: 17px;
+}
+
+@media screen and (max-width: 1100px) {
+    .footer__blocks-wr {
+        grid-template-columns: 1fr 21.4% 30% 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer__blocks-wr {
+        grid-template-columns: 20% 30% 30% 20%;
+    }
+
+    .foooter__catalogue {
+        justify-self: left;
+    }
+
+    .footer__customer {
+        justify-self: center;
+    }
+
+    .footer__logo-wr {
+        display: none;
+    }
+    .footer__graphic {
+        transform: none;
+        justify-self: center;
+    }
+
+    .footer__contacts {
+        justify-self: right;
+        transform: none;
+    }
+
+    .footer__btn {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
 }
