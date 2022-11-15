@@ -14,8 +14,20 @@
 .foooter__catalogue {
 }
 .footer__title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: lh(12, 16);
+    text-transform: uppercase;
+    color: #ffffff;
 }
 .footer__item {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: em(12);
+    color: #ffffff;
 }
 .footer__customer {
 }
