@@ -63,7 +63,6 @@
     font-family: 'Proxima Nova';
     font-weight: 400;
   }
-
   .wrapper {
     overflow: hidden;
     display: flex;
@@ -75,8 +74,8 @@
     min-height: 100%;
   }
 [class*=__container]{
-    max-width: 1170px;
+    max-width: 1211px;
     margin: 0px auto;
-    color: #fff;
+    color: #282828;
     padding: 0px 15px 0px;
 }

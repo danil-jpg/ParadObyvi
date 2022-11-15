@@ -1,0 +1,23 @@
+.header-problem {
+    background-color: #999999;
+    height: 35px;
+}
+.header-problem__container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    p{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        a{
+            color: #0B66A9;
+            :nth-child(2){
+                background-color: #E3BF00;
+            }
+        }
+    }
+}
