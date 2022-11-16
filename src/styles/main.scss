@@ -50,16 +50,6 @@
     overflow: hidden;
     padding: 0;
 }
-.swiper-wrapper {
-}
-.swiper-wrapper-sneakers{
-}
-.swiper-slide {
-
-}
-.swiper-slide-sneakers {
-    // width: fit-content !important;
-}
 .sneakers-block {
     width: 230px;
     height: fit-content;
@@ -90,8 +80,6 @@
             visibility: hidden;
         }
     }
-}
-.sneakers-block__like-icon {
 }
 .sneakers-block__shoes {
     width: 100%;
@@ -341,19 +329,9 @@
 .swiper-brends__button-prev {
     left: -7px;
 }
-.swiper-wrapper {
-}
 .swiper-wrapper-brends {
     display: flex;
     align-items: center;
-}
-.swiper-slide {
-}
-.swiper-slide-brends {
-}
-.swiper-brends__button-prev {
-}
-.swiper-brends__button-next {
 }
 .swiper-brends__btn{
     margin: 27px auto 0;
