@@ -1,10 +1,15 @@
 function header () {
-    const headerProblemClose = document.querySelector('.header-problem__close');
-    const headerProblem = document.querySelector('.header-problem');
-    
-    headerProblemClose.addEventListener('click', () => {
-        headerProblem.classList.toggle('close')
+  const headerProblemCloseAll = document.querySelectorAll('.header-problem__close')
+  const headerProblem = document.querySelectorAll('.header-problem')
+  console.log(headerProblemCloseAll, headerProblem)
+
+  headerProblemCloseAll.forEach(item => {
+    item.addEventListener('click', () => {
+      headerProblem.forEach(item => {
+        item.classList.toggle('close')
+      })
     })
+  })
 }
 
 export default header
