@@ -428,7 +428,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    > a {
+    background-color: #fff;
+    >a{
         display: flex;
         align-items: center;
         gap: 17.5px;
@@ -439,23 +440,14 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     height: 48px;
     padding: 0 10px;
+    position: relative;
 }
 .header-mobyle__nav-list {
     display: flex;
     justify-content: space-between;
 }
-.header-burger {
-}
-.header-search {
-}
-.header-catalog {
-}
-.header-acc {
-}
-.header-like {
-}
-.header-basket {
-}
+
+
 // mobyle =========================================
 // Mobile menu is  below
 //
@@ -463,10 +455,12 @@
 .header__mobile-menu {
     width: 100vw;
     position: absolute;
-    top: 175px;
+    z-index: 100;
+    top: 48px;
     left: -100%;
-    transition: 0.3s;
-    height: 400px;
+    transition: .3s;
+    height: 72vh;
+    background-color: #fff;
 }
 .header__mobile-menu.active {
     width: 100vw;
@@ -673,6 +667,35 @@
                 filter: invert(1);
             }
         }
+    }
+}
+@media (max-width: 360px){
+    .header-problem {
+        padding: 7px 0 9px;
+    }   
+    .header-mobyle__logo{
+        >a{
+            gap: 10px;
+            img{
+                &:nth-child(1){
+                    width: 114.58px;
+                    transform: translateX(-7px);
+                }
+                &:nth-child(2) {
+                    width: 106.63px;
+                }
+            }
+        }
+    } 
+    .header-problem__container {
+        align-items: flex-start;
+        p{
+            margin: 3px 10px 0 0;
+        }
+    }
+    .header-problem__close {
+        margin-right: 2px;
+        margin-top: 1px;
     }
 }
 
