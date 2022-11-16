@@ -16,6 +16,7 @@ module.exports = {
       'single'
     ],
     'no-unused-vars': ['warn'],
-    'no-unused-expressions': ['warn']
+    'no-unused-expressions': ['warn'],
+    'no-mixed-spaces-and-tabs': ['error', 'smart-tabs']
   }
 }
