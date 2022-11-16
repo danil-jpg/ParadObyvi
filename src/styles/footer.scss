@@ -111,6 +111,23 @@
     display: none;
 }
 
+.footer {
+    padding-left: 5px;
+}
+
+.footer__graphic {
+    transform: translate(-14px);
+}
+
+.footer__contacts {
+    transform: translate(-20px);
+}
+
+.footer__btn {
+    right: 22px;
+    bottom: 35px;
+}
+
 @media screen and (max-width: 1100px) {
     .footer__blocks-wr {
         grid-template-columns: 1fr 21.4% 30% 1fr 1fr;
