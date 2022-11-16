@@ -128,6 +128,10 @@
     bottom: 35px;
 }
 
+.footer {
+    display: none;
+}
+
 @media screen and (max-width: 1100px) {
     .footer__blocks-wr {
         grid-template-columns: 1fr 21.4% 30% 1fr 1fr;
@@ -224,9 +228,9 @@
             transform: none;
         }
     }
-    .active {
-        display: block;
-    }
+    // .active {
+    //     display: block;
+    // }
     .footer__item {
         font-weight: 500;
         font-size: 1em;
@@ -236,15 +240,19 @@
     }
 
     .foooter__catalogue.active {
+        display: block;
         background: #ffffff;
     }
     .footer__customer.active {
+        display: block;
         background: #ffffff;
     }
     .footer__graphic.active {
+        display: block;
         background: #ffffff;
     }
     .footer__contacts.active {
+        display: block;
         background: #ffffff;
     }
     .footer__blocks-wr {
