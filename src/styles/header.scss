@@ -429,6 +429,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #fff;
     >a{
         display: flex;
         align-items: center;
@@ -445,18 +446,7 @@
     display: flex;
     justify-content: space-between;
 }
-.header-burger {
-}
-.header-search {
-}
-.header-catalog {
-}
-.header-acc {
-}
-.header-like {
-}
-.header-basket {
-}
+
 // mobyle =========================================
 
 @media (max-width: 1243px){
@@ -539,5 +529,34 @@
                 filter: invert(1);
             }
         }
+    }
+}
+@media (max-width: 360px){
+    .header-problem {
+        padding: 7px 0 9px;
+    }   
+    .header-mobyle__logo{
+        >a{
+            gap: 10px;
+            img{
+                &:nth-child(1){
+                    width: 114.58px;
+                    transform: translateX(-7px);
+                }
+                &:nth-child(2) {
+                    width: 106.63px;
+                }
+            }
+        }
+    } 
+    .header-problem__container {
+        align-items: flex-start;
+        p{
+            margin: 3px 10px 0 0;
+        }
+    }
+    .header-problem__close {
+        margin-right: 2px;
+        margin-top: 1px;
     }
 }
