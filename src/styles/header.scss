@@ -467,6 +467,7 @@
     left: -100%;
     transition: 0.3s;
     height: 400px;
+    background: white;
 }
 .header__mobile-menu.active {
     width: 100vw;
@@ -592,6 +593,13 @@
 }
 .menu-trigger_2.active {
     background-color: #e83841;
+}
+.header__mobile-menu.activeOld {
+    top: 94px;
+}
+.mobile-menu_2.activeOld {
+    left: 0;
+    top: 107px;
 }
 @media (max-width: 1243px) {
     .header-menu-link {
