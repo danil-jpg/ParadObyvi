@@ -1,28 +1,28 @@
-.swiper-top{
+.swiper-top {
     overflow: hidden;
     position: relative;
 }
-.swiper-slide-top{
+.swiper-slide-top {
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    >img{
+    > img {
         height: 100%;
     }
 }
-.swiper-button-next:after, 
-.swiper-button-prev:after{
+.swiper-button-next:after,
+.swiper-button-prev:after {
     display: none;
 }
-.swiper-top__button-prev, 
-.swiper-top__button-next{
+.swiper-top__button-prev,
+.swiper-top__button-next {
     top: 47.8%;
 }
-.swiper-top__button-next{
+.swiper-top__button-next {
     right: 21px;
 }
-.swiper-top__button-prev{
+.swiper-top__button-prev {
     left: 23px;
 }
 
@@ -32,8 +32,8 @@
     margin-top: 34px;
     position: relative;
 }
-.swiper-sneakers__title{
-    font-family: 'Montserrat';
+.swiper-sneakers__title {
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
@@ -55,14 +55,14 @@
     height: fit-content;
     background-color: #fff;
     padding: 15px 0 8px 0;
-    &:hover{
-        background: #FFFFFF;
-        border: 1px solid #F1F1F1;
+    &:hover {
+        background: #ffffff;
+        border: 1px solid #f1f1f1;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
         .sneakers-matirial-top,
         .sneakers-matirial-bottom,
-        .sneakers-btn{
+        .sneakers-btn {
             visibility: visible;
             opacity: 1;
         }
@@ -75,8 +75,8 @@
     justify-content: space-between;
     position: relative;
     z-index: 1;
-    img{
-        &:nth-child(1){
+    img {
+        &:nth-child(1) {
             visibility: hidden;
         }
     }
@@ -94,35 +94,35 @@
     align-items: center;
     position: absolute;
     bottom: -13px;
-    p{
-        font-family: 'Montserrat';
+    p {
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 500;
         font-size: 10px;
         line-height: 12px;
         text-transform: lowercase;
-        background-color: #5E9738;
+        background-color: #5e9738;
         height: 16px;
         width: 84px;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #FFFFFF;
+        color: #ffffff;
     }
-    span{
-        font-family: 'Montserrat';
+    span {
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 500;
         font-size: 10px;
         line-height: 12px;
         text-transform: lowercase;
-        background-color: #E83841;
+        background-color: #e83841;
         height: 16px;
         width: 84px;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #FFFFFF;
+        color: #ffffff;
     }
 }
 .sneakers-block__price {
@@ -131,19 +131,20 @@
     justify-content: center;
     margin-top: 17px;
     gap: 20px;
-    span{
-        font-family: 'Montserrat';
+    span {
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
         font-size: 17px;
         line-height: 21px;
         text-decoration-line: line-through;
         text-transform: lowercase;
-        
+        // transform: translate(8px);
+
         color: #999999;
     }
-    p{
-        font-family: 'Montserrat';
+    p {
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
@@ -154,7 +155,7 @@
     }
 }
 .sneakers-name {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -167,7 +168,7 @@
     margin-top: 3px;
 }
 .sneakers-id-number {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -180,7 +181,7 @@
     margin-top: 5px;
 }
 .sneakers-pair {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -202,16 +203,16 @@
     margin-top: 5px;
     gap: 5px;
 
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
     text-align: center;
 
-    p{
+    p {
         color: #282828;
-        span{
+        span {
             color: #828282;
         }
     }
@@ -223,20 +224,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     gap: 5px;
     margin-top: 1px;
 
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
     text-align: center;
 
-    p{
+    p {
         color: #282828;
-        span{
+        span {
             color: #828282;
         }
     }
@@ -248,7 +249,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -265,9 +266,9 @@
 
     color: #282828;
     transition: all 0.2s;
-    &:hover{
+    &:hover {
         background-color: #282828;
-        color: #FFFFFF;
+        color: #ffffff;
     }
 }
 .sneakers-btn-right {
@@ -278,9 +279,9 @@
     align-items: center;
     justify-content: center;
 
-    color: #FFFFFF;
+    color: #ffffff;
     transition: all 0.2s;
-    &:hover{
+    &:hover {
         border: 1px solid #282828;
         background-color: transparent;
         color: #282828;
@@ -296,16 +297,15 @@
     top: 49.4%;
     right: 7px;
 }
-.sneakers-manufacturer{
+.sneakers-manufacturer {
     display: none;
 }
-
 
 .swiper-brends__container {
     margin-top: 25px;
 }
 .swiper-brends__title {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
@@ -323,7 +323,7 @@
     max-width: 1124px;
     margin: 37px auto 0;
 }
-.swiper-brends__button-next{
+.swiper-brends__button-next {
     right: -8px;
 }
 .swiper-brends__button-prev {
@@ -333,14 +333,14 @@
     display: flex;
     align-items: center;
 }
-.swiper-brends__btn{
+.swiper-brends__btn {
     margin: 27px auto 0;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 145px;
     height: 40px;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -349,19 +349,19 @@
 
     color: #282828;
     transition: all 0.2s;
-    &:hover{
+    &:hover {
         background-color: #282828;
         color: #fff;
     }
 }
-.swiper-sneakers-2__container{
+.swiper-sneakers-2__container {
     margin-top: 47px;
 }
-.swiper-sneakers-2{
+.swiper-sneakers-2 {
     margin-top: 22px;
 }
 // ================================
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
     .swiper-sneakers,
     .swiper-sneakers-2 {
         position: relative;
@@ -370,52 +370,52 @@
         overflow: hidden;
         padding: 0 15px;
     }
-    .sneakers-block{
+    .sneakers-block {
         width: auto;
     }
 }
-@media (max-width: 992px){
-    .swiper-top__container{
+@media (max-width: 992px) {
+    .swiper-top__container {
         padding: 0px 0px 0px 0px;
     }
-    .swiper-slide-top{
-        >img{
+    .swiper-slide-top {
+        > img {
             width: 100%;
         }
     }
     .swiper-top__button-prev,
-    .swiper-top__button-next{
+    .swiper-top__button-next {
         display: none;
     }
     .swiper-sneakers,
-    .swiper-sneakers-2{
+    .swiper-sneakers-2 {
         width: auto;
     }
 }
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .swiper-sneakers__button-next,
     .swiper-sneakers-2__button-next,
     .swiper-sneakers-2__button-prev,
-    .swiper-sneakers__button-prev{
+    .swiper-sneakers__button-prev {
         display: none;
     }
     .swiper-sneakers__container {
         margin-top: 23px;
     }
-    .swiper-sneakers__title{
+    .swiper-sneakers__title {
         font-size: 20px;
     }
-    .sneakers-block__shoes{
-        >img{
+    .sneakers-block__shoes {
+        > img {
             width: 141.94px;
             height: 106.47px;
         }
     }
-    .sneakers-block__shoes-prefix{
-        span{
+    .sneakers-block__shoes-prefix {
+        span {
             height: 14px;
         }
-        p{
+        p {
             height: 14px;
         }
     }
@@ -425,28 +425,29 @@
         border: 1px solid #f1f1f1;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
-    .sneakers-matirial-top{
+    .sneakers-matirial-top {
         visibility: visible;
         opacity: 1;
     }
-    .sneakers-matirial-bottom{
+    .sneakers-matirial-bottom {
         visibility: visible;
-        opacity: 1; 
+        opacity: 1;
     }
-    .sneakers-btn{
+    .sneakers-btn {
         visibility: visible;
-        opacity: 1; 
+        opacity: 1;
     }
     .swiper-brends__button-next,
-    .swiper-brends__button-prev{
+    .swiper-brends__button-prev {
         display: none;
     }
 }
-@media (max-width: 576px){
-    .sneakers-block__price{
+@media (max-width: 576px) {
+    .sneakers-block__price {
         gap: 18px;
         margin-top: 13px;
-        span,p{
+        span,
+        p {
             font-size: 10px;
             line-height: 12px;
         }
@@ -455,19 +456,19 @@
     .swiper-sneakers-2 {
         padding: 0;
     }
-    .sneakers-block__like-icon{
+    .sneakers-block__like-icon {
         width: 18.34px;
         height: 15.28px;
     }
-    .sneakers-name{
+    .sneakers-name {
         font-size: 10px;
         line-height: 12px;
         margin-top: 1px;
-    }            
+    }
     .sneakers-block__like {
         padding: 0 13px 0 12px;
-        img{
-            &:nth-child(1){
+        img {
+            &:nth-child(1) {
                 visibility: visible;
                 width: 12.61px;
                 height: 12.32px;
@@ -476,35 +477,35 @@
     }
     .sneakers-block__shoes-prefix {
         bottom: -10px;
-        p{
+        p {
             width: 53px;
         }
-        span{
+        span {
             width: 73px;
         }
     }
-    .sneakers-id-number{
+    .sneakers-id-number {
         font-size: 10px;
         line-height: 12px;
         margin-top: 3px;
     }
-    .sneakers-pair{
+    .sneakers-pair {
         font-size: 10px;
         line-height: 12px;
         margin-top: 1px;
     }
-    .sneakers-matirial-top{
+    .sneakers-matirial-top {
         font-size: 10px;
         line-height: 12px;
         margin-top: 4px;
     }
-    .sneakers-matirial-bottom{
+    .sneakers-matirial-bottom {
         font-size: 10px;
         line-height: 12px;
     }
-    .sneakers-manufacturer{
+    .sneakers-manufacturer {
         display: block;
-        font-family: 'Montserrat';
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 500;
         font-size: 10px;
@@ -514,38 +515,38 @@
         justify-content: center;
         text-align: center;
         margin-top: 3px;
-        span{
+        span {
             color: #828282;
         }
-        p{
+        p {
             color: #282828;
         }
     }
-    .sneakers-btn{
+    .sneakers-btn {
         font-size: 10px;
         line-height: 12px;
         margin-top: 4px;
     }
-    .sneakers-btn-left{
+    .sneakers-btn-left {
         height: 25px;
         width: 73px;
     }
-    .sneakers-btn-right{
+    .sneakers-btn-right {
         height: 25px;
         width: 72px;
     }
-    .swiper-brends__container{
+    .swiper-brends__container {
         overflow: hidden;
         margin-top: 25px;
         padding: 0px 0px 0px 0px;
     }
-    .swiper-brends__block{
+    .swiper-brends__block {
         padding: 0px 0px 0px 0px;
     }
-    .swiper-brends{
+    .swiper-brends {
         overflow: visible;
     }
-    .swiper-brends__title{
+    .swiper-brends__title {
         font-size: 20px;
     }
     .swiper-brends {
@@ -555,8 +556,8 @@
         transform: translateX(-21px);
         margin: -7px auto 0;
     }
-    .swiper-slide-brends{
-        img{
+    .swiper-slide-brends {
+        img {
             width: 108.14px;
             height: auto;
         }
@@ -572,8 +573,8 @@
         margin-top: 20px;
     }
 }
-@media (max-width: 359px){
-    .sneakers-block__shoes>img {
+@media (max-width: 359px) {
+    .sneakers-block__shoes > img {
         width: 85%;
         height: auto;
     }
