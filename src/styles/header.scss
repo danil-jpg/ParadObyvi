@@ -429,7 +429,7 @@
     align-items: center;
     justify-content: center;
     background-color: #fff;
-    >a{
+    > a {
         display: flex;
         align-items: center;
         gap: 17.5px;
@@ -447,7 +447,6 @@
     justify-content: space-between;
 }
 
-
 // mobyle =========================================
 // Mobile menu is  below
 //
@@ -458,9 +457,9 @@
     z-index: 100;
     top: 48px;
     left: -100%;
-    transition: .3s;
-    height: 72vh;
-    background-color: #fff;
+    transition: 0.3s;
+    height: 400px;
+    background: white;
 }
 .header__mobile-menu.active {
     width: 100vw;
@@ -587,6 +586,18 @@
 .menu-trigger_2.active {
     background-color: #e83841;
 }
+.header__mobile-menu.activeOld {
+    top: 94px;
+}
+.mobile-menu_2.activeOld {
+    left: 0;
+    top: 107px;
+}
+
+.blur4px {
+    filter: blur(4px);
+}
+
 @media (max-width: 1243px) {
     .header-menu-link {
         font-size: 13px;
@@ -669,15 +680,15 @@
         }
     }
 }
-@media (max-width: 360px){
+@media (max-width: 360px) {
     .header-problem {
         padding: 7px 0 9px;
-    }   
-    .header-mobyle__logo{
-        >a{
+    }
+    .header-mobyle__logo {
+        > a {
             gap: 10px;
-            img{
-                &:nth-child(1){
+            img {
+                &:nth-child(1) {
                     width: 114.58px;
                     transform: translateX(-7px);
                 }
@@ -686,10 +697,10 @@
                 }
             }
         }
-    } 
+    }
     .header-problem__container {
         align-items: flex-start;
-        p{
+        p {
             margin: 3px 10px 0 0;
         }
     }

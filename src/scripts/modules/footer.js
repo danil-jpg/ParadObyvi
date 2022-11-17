@@ -10,7 +10,6 @@ function mobileMenu () {
       elemsToShow.forEach(item => {
         item.classList.toggle('active')
       })
-      console.log(parentElem)
 
       parentElem.classList.toggle('active')
 
