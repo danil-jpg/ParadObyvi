@@ -148,6 +148,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    z-index: 100;
 }
 .header-menu-link {
     font-family: "Montserrat";
@@ -587,131 +589,15 @@
     background-color: #e83841;
 }
 .header__mobile-menu.activeOld {
-    top: 94px;
+    top: 48px;
 }
 .mobile-menu_2.activeOld {
     left: 0;
-    top: 107px;
+    top: 48px;
 }
 
 .blur4px {
     filter: blur(4px);
 }
 
-@media (max-width: 1243px) {
-    .header-menu-link {
-        font-size: 13px;
-    }
-    .header-main__container {
-        padding: 0 15px 0 15px;
-    }
-    .header-main__drop {
-        gap: 15px;
-    }
-    .header-main__drop-buyer,
-    .header-main__drop-tell {
-        > p {
-            font-size: 13px;
-        }
-    }
-    .header-list-icon {
-        gap: 12px;
-    }
-    .header-list-btn {
-        gap: 14px;
-    }
-    .header-search-input {
-        > input {
-            width: 145px;
-        }
-    }
-    .header-menu__container {
-        padding: 0 25px 0 25px;
-    }
-    .sub-menu__level-1 {
-        width: 215px;
-    }
-    .sub-menu__block-level-2 {
-        left: 86%;
-        padding: 0 0 0 29px;
-    }
-    .sub-menu__level-2 {
-        padding: 15px 15px 20px 15px;
-        row-gap: 8px;
-        -moz-column-gap: 28px;
-        column-gap: 15px;
-        min-width: 315px;
-        height: 387px;
-    }
-    .sub-menu__level-2 {
-        > li {
-            width: 140px;
-        }
-    }
-    .sub-menu__level-3 {
-        > li {
-            width: 170px;
-        }
-    }
-    .for-kids-2 {
-        > li {
-            width: fit-content;
-        }
-    }
-    .header-problem__container p {
-        margin: 5px 10px 0 0px;
-    }
-    .header-problem__close {
-        margin-right: 1px;
-    }
-}
-@media (max-width: 992px) {
-    .header-desctop {
-        display: none;
-    }
-    .header-mobyle {
-        display: block;
-    }
-    .header-mobyle__logo {
-        img {
-            &:nth-child(2) {
-                filter: invert(1);
-            }
-        }
-    }
-}
-@media (max-width: 360px) {
-    .header-problem {
-        padding: 7px 0 9px;
-    }
-    .header-mobyle__logo {
-        > a {
-            gap: 10px;
-            img {
-                &:nth-child(1) {
-                    width: 114.58px;
-                    transform: translateX(-7px);
-                }
-                &:nth-child(2) {
-                    width: 106.63px;
-                }
-            }
-        }
-    }
-    .header-problem__container {
-        align-items: flex-start;
-        p {
-            margin: 3px 10px 0 0;
-        }
-    }
-    .header-problem__close {
-        margin-right: 2px;
-        margin-top: 1px;
-    }
-}
 
-@media screen and (max-width: 359px) {
-    .header__mobile-menu {
-        top: 200px;
-    }
-}
