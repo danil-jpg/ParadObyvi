@@ -77,6 +77,13 @@
     .sneakers-block{
         width: auto;
     }
+    .swiper-slide-top{
+        picture{
+            img{
+                inline-size: 100%;
+            }
+        }
+    }
 }
 @media screen and (max-width: 1100px) {
     .footer__blocks-wr {
@@ -152,7 +159,7 @@
         display: none;
     }
     .swiper-sneakers__container {
-        margin-top: 23px;
+        margin-top: 22px;
     }
     .swiper-sneakers__title{
         font-size: 20px;
@@ -172,7 +179,7 @@
         }
     }
     .sneakers-block {
-        padding: 7px 0 7px;
+        padding: 8px 0 7px;
         background: #fff;
         border: 1px solid #f1f1f1;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -192,6 +199,9 @@
     .swiper-brends__button-next,
     .swiper-brends__button-prev{
         display: none;
+    }
+    .sneakers-block__shoes{
+        margin-top: -5px;
     }
     // footer=======================
     .footer__content {
@@ -515,6 +525,14 @@
     }
     .swiper-sneakers-2 {
         margin-top: 20px;
+    }
+    .swiper-slide-top{
+        picture{
+            width: 100%;
+            img{
+                inline-size: 100%;
+            }
+        }
     }
 }
 @media (max-width: 360px) {
