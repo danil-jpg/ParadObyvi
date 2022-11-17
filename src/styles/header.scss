@@ -593,6 +593,11 @@
     left: 0;
     top: 107px;
 }
+
+.blur4px {
+    filter: blur(4px);
+}
+
 @media (max-width: 1243px) {
     .header-menu-link {
         font-size: 13px;

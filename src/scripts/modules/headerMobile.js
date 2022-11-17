@@ -7,6 +7,8 @@ function mobileBurger () {
 
   const oldVer = document.querySelector('.header-problem ')
 
+  const elemsToBlur = document.querySelectorAll('body > *:not(header)')
+
   menuTrigger1.addEventListener('click', () => {
     menuTrigger1.classList.toggle('active')
     menusImg.toggleAttribute('true')
@@ -22,10 +24,19 @@ function mobileBurger () {
     }
 
     menu.classList.toggle('active')
+
+    elemsToBlur.forEach(item => {
+      item.classList.toggle('blur4px')
+    })
   })
 
   menuTrigger2.addEventListener('click', () => {
     menuTrigger2.classList.toggle('active')
+
+    elemsToBlur.forEach(item => {
+      item.classList.toggle('blur4px')
+    })
+
     if (getComputedStyle(oldVer).display === 'none') {
       menu2.classList.toggle('activeOld')
     }
