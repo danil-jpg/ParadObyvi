@@ -104,6 +104,12 @@
     pointer-events: none;
 }
 
+@media screen and (min-width: 1249px) {
+    .text__title-wr {
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .text__top_wr {
         width: 95%;
