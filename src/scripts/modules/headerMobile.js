@@ -1,9 +1,13 @@
 function mobileBurger () {
   const menuTrigger1 = document.querySelector('.menu-trigger_1')
   const menuTrigger2 = document.querySelector('.menu-trigger_2')
+  const menuTrigger3 = document.querySelector('.menu-trigger_3')
   const menusImg = document.querySelector('.trigger-img_pc')
   const menu = document.querySelector('.header__mobile-menu')
   const menu2 = document.querySelector('.mobile-menu_2')
+
+  const menu3 = document.querySelector('.mobile-menu_3')
+  const redCross = document.querySelector('.red-cross_wr')
 
   const oldVer = document.querySelector('.header-problem ')
 
@@ -41,6 +45,13 @@ function mobileBurger () {
       menu2.classList.toggle('activeOld')
     }
     menu2.classList.toggle('active')
+  })
+
+  menuTrigger3.addEventListener('click', () => {
+    menu3.classList.toggle('active')
+  })
+  redCross.addEventListener('click', () => {
+    menu3.classList.toggle('active')
   })
 }
 
