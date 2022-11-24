@@ -461,7 +461,7 @@
     top: 48px;
     left: -100%;
     transition: 0.3s;
-    height: 400px;
+    height: calc(100vh - 147px);
     background: white;
 }
 .header__mobile-menu.active {
@@ -518,6 +518,9 @@
     img {
         z-index: 1;
     }
+}
+.menu-trigger_1.active {
+    z-index: 2;
 }
 
 .trigger-img_mob {

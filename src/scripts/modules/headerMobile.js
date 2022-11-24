@@ -1,4 +1,6 @@
 function mobileBurger () {
+  const allMenus = document.querySelectorAll('.header__mobile-menu.active')
+
   const menuTrigger1 = document.querySelector('.menu-trigger_1')
   const menuTrigger2 = document.querySelector('.menu-trigger_2')
   const menuTrigger3 = document.querySelector('.menu-trigger_3')
