@@ -60,35 +60,35 @@ popUpOpenWarNew.forEach(item => {
 // ==================================================
 popUpOpen.forEach(item => {
     item.addEventListener('click', () => {
-        popUpAcc.forEach(item => {
-            item.classList.toggle('open')
-            bodyLock.classList.toggle('lock')
-        })
+      popUpAcc.forEach(item => {
+        item.classList.toggle('open')
+        bodyLock.classList.toggle('lock')
+      })
     })
-})
-popUpClose.forEach(item => {
+  })
+  popUpClose.forEach(item => {
     item.addEventListener('click', () => {
-        popUpAcc.forEach(item => {
-            item.classList.remove('open')
-            bodyLock.classList.remove('lock')
-        })
+      popUpAcc.forEach(item => {
+        item.classList.remove('open')
+        bodyLock.classList.remove('lock')
+      })
     })
-})
+  })
 
-popUpBtn.forEach(item => {
+  popUpBtn.forEach(item => {
     item.addEventListener('click', () => {
-        popUpTabLeft.classList.toggle('active') 
-        popUpTabRight.classList.toggle('active')
-        popUpLogin.classList.toggle('active') 
-        popUpNewClient.classList.toggle('active')
+      popUpTabLeft.classList.toggle('active')
+      popUpTabRight.classList.toggle('active')
+      popUpLogin.classList.toggle('active')
+      popUpNewClient.classList.toggle('active')
     })
-})
+  })
 
-popUpDrop.forEach(item => {
+  popUpDrop.forEach(item => {
     item.addEventListener('click', () => {
-        popUpDropForm.classList.toggle('open')
+      popUpDropForm.classList.toggle('open')
     })
-})
+  })
 }
 
 export default popUpPage
