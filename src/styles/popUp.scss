@@ -227,11 +227,12 @@
     background-color: #fff;
     box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
     padding: 25px 20px;
-    position: relative;
-    right: -400%;
+    // position: relative;
+    // right: -400%;
+    display: none;
     transition: all 0.5s;
     &.open{
-        right: 0px;
+        display: block;
     }
 }
 .pop-up__war-close {
@@ -279,6 +280,7 @@
         left: calc(50% - 170px);
         max-width: 330px;
         padding: 25px 20px;
+        top: 12%;
     }
     .pop-up-logo{
         padding: 0px 0px 0px 0px;

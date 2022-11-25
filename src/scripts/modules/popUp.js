@@ -15,8 +15,8 @@ let popUpOpenWar = document.querySelectorAll('.pop-up__war-open');
 let popUpOpenContent = document.querySelector('.pop-up-war');
 let popUpWarClose = document.querySelectorAll('.pop-up__war-close');
 let popUpWarBlock = document.querySelectorAll('.pop-up__war-block');
-// let popUpWarBlockNew = document.querySelectorAll('.pop-up__war-block-2');
-// let popUpOpenWarNew = document.querySelectorAll('.pop-up__war-open-2');
+let popUpWarBlockNew = document.querySelectorAll('.pop-up__war-block-2');
+let popUpOpenWarNew = document.querySelectorAll('.pop-up__war-open-2');
 popUpOpenWar.forEach(item => {
     item.addEventListener('click', () => {
         popUpWarBlock.forEach(item => {
@@ -24,7 +24,6 @@ popUpOpenWar.forEach(item => {
             popUpOpenContent.classList.add('open')
             setTimeout(function(){
                 item.classList.remove('open')
-                popUpOpenContent.classList.remove('open')
             }, 3500);
         })
     })
@@ -39,25 +38,25 @@ popUpOpenWar.forEach(item => {
 })
 
 // ==================================================
-// popUpOpenWarNew.forEach(item => {
-//     item.addEventListener('click', () => {
-//         popUpWarBlockNew.forEach(item => {
-//             item.classList.add('open')
-//             popUpOpenContent.classList.add('open')
-//             setTimeout(function(){
-//                 item.classList.remove('open')
-//             }, 3500);
-//         })
-//     })
-//     popUpWarClose.forEach(item => {
-//         item.addEventListener('click', () => {
-//             popUpWarBlockNew.forEach(item => {
-//                 item.classList.remove('open')
-//                 popUpOpenContent.classList.remove('open')
-//             })
-//         })
-//     })
-// })
+popUpOpenWarNew.forEach(item => {
+    item.addEventListener('click', () => {
+        popUpWarBlockNew.forEach(item => {
+            item.classList.add('open')
+            popUpOpenContent.classList.add('open')
+            setTimeout(function(){
+                item.classList.remove('open')
+            }, 3500);
+        })
+    })
+    popUpWarClose.forEach(item => {
+        item.addEventListener('click', () => {
+            popUpWarBlockNew.forEach(item => {
+                item.classList.remove('open')
+                popUpOpenContent.classList.remove('open')
+            })
+        })
+    })
+})
 // ==================================================
 popUpOpen.forEach(item => {
     item.addEventListener('click', () => {
