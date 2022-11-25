@@ -1,3 +1,5 @@
+import { active } from 'browser-sync'
+
 function mobileBurger () {
   const allMenus = document.querySelectorAll('.header__mobile-menu.active')
 
@@ -10,6 +12,8 @@ function mobileBurger () {
 
   const menu3 = document.querySelector('.mobile-menu_3')
   const redCross = document.querySelector('.red-cross_wr')
+
+  const html = document.querySelector('html')
 
   const oldVer = document.querySelector('.header-problem ')
 
@@ -34,6 +38,8 @@ function mobileBurger () {
     elemsToBlur.forEach(item => {
       item.classList.toggle('blur4px')
     })
+
+    html.classList.toggle('active')
   })
 
   menuTrigger2.addEventListener('click', () => {
@@ -47,10 +53,14 @@ function mobileBurger () {
       menu2.classList.toggle('activeOld')
     }
     menu2.classList.toggle('active')
+
+    html.classList.toggle('active')
   })
 
   menuTrigger3.addEventListener('click', () => {
     menu3.classList.toggle('active')
+
+    html.classList.toggle('active')
   })
   redCross.addEventListener('click', () => {
     menu3.classList.toggle('active')
