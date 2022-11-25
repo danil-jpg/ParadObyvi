@@ -210,7 +210,7 @@
     position: fixed;
     bottom: 0;
     right: -400%;
-    z-index: 100;
+    z-index: 120;
     width: 430px;
     margin: 25px;
     height: fit-content;
@@ -222,8 +222,7 @@
         right: 0px;
     }
 }
-.pop-up__war-block,
-.pop-up__war-block-2 {
+.pop-up__war-block{
     background-color: #fff;
     box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
     padding: 25px 20px;
@@ -331,8 +330,7 @@
         width: 275px;
         margin: 20px;
     }
-    .pop-up__war-block,
-    .pop-up__war-block-2 {
+    .pop-up__war-block{
         padding: 25px 15px;
     }
     .pop-up__war-btn{
