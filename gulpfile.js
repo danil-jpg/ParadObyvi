@@ -349,8 +349,6 @@ const prod = gulp.series(
   clean, imgP, fontsP, htmlMinP, stylesMinP, scriptsP, criticalP, watchP
 )
 
-// Цепочка прод пока тестовая
-
 export { clean }
 export { styles }
 export { watch }
