@@ -750,7 +750,7 @@ html.active {
     left: -100%;
     transition: 0.3s;
     height: 96vh;
-
+    z-index: 999;
     background: #fff;
 }
 
@@ -765,7 +765,7 @@ html.active {
     left: -100%;
     transition: 0.3s;
     height: 96vh;
-
+    z-index: 999;
     background: #fff;
 }
 
@@ -780,10 +780,25 @@ html.active {
     left: -100%;
     transition: 0.3s;
     height: 96vh;
-
+    z-index: 999;
     background: white;
 }
 
 .menu-for-kids.active {
+    left: 0;
+}
+
+.menu-in-Ukraine {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 0.3s;
+    height: 96vh;
+
+    background: white;
+}
+
+.menu-in-Ukraine.active {
     left: 0;
 }

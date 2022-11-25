@@ -34,6 +34,9 @@ function mobileBurger () {
   const kidsTrigger = document.querySelectorAll('.kidsList')
   const kidsMenu = document.querySelector('.menu-for-kids')
 
+  const madeInUkraineTrigger = document.querySelectorAll('.madeInUkraineList')
+  const madeInUkraineMenu = document.querySelector('.menu-in-Ukraine')
+
   menuTrigger1.addEventListener('click', () => {
     menuTrigger1.classList.toggle('active')
     menusImg.toggleAttribute('true')
@@ -99,12 +102,14 @@ function mobileBurger () {
   // For womens
 
   dropDownList(kidsTrigger, kidsMenu)
+  // For kids
+
+  dropDownList(madeInUkraineTrigger, madeInUkraineMenu)
 
   function dropDownList (triggerClass, dropDownListClass) {
     triggerClass.forEach(item => {
       item.addEventListener('click', () => {
         dropDownListClass.classList.toggle('active')
-        console.log(dropDownList)
       })
     })
   }
