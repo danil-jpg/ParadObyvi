@@ -10,54 +10,34 @@ let popUpLogin = document.querySelector('.popUp-login');
 let popUpNewClient = document.querySelector('.popUp-login-new');
 let popUpDrop = document.querySelectorAll('.popUp-login__new-drop');
 let popUpDropForm = document.querySelector('.popUp-login__new-form-second');
+
 let popUpOpenWar = document.querySelectorAll('.pop-up__war-open');
-
 let popUpOpenContent = document.querySelector('.pop-up-war');
-let popUpWarClose = document.querySelectorAll('.pop-up__war-close');
+let popUpWarClose = document.querySelector('.pop-up__war-close');
 let popUpWarBlock = document.querySelectorAll('.pop-up__war-block');
-let popUpWarBlockNew = document.querySelectorAll('.pop-up__war-block-2');
-let popUpOpenWarNew = document.querySelectorAll('.pop-up__war-open-2');
-popUpOpenWar.forEach(item => {
-    item.addEventListener('click', () => {
-        popUpWarBlock.forEach(item => {
-            item.classList.add('open')
-            popUpOpenContent.classList.add('open')
-            setTimeout(function(){
-                item.classList.remove('open')
-            }, 3500);
-        })
+
+
+
+// ======================================================
+popUpOpenWar.forEach((item)=> {
+  item.addEventListener('click', () => {
+    popUpOpenContent.classList.add('open')
+    popUpWarBlock.forEach((item, index) => {
+      popUpWarBlock[index].classList.add('open')
+      setTimeout(function(){
+        item.classList.remove('open')
+      }, 3500);
     })
-    popUpWarClose.forEach(item => {
-        item.addEventListener('click', () => {
-            popUpWarBlock.forEach(item => {
-                item.classList.remove('open')
-                popUpOpenContent.classList.remove('open')
-            })
-        })
+    popUpWarClose.addEventListener('click', () => {
+      popUpWarBlock.forEach(item => {
+        item.classList.remove('open')
+      })
+      popUpOpenContent.classList.remove('open')
     })
+  })
 })
 
-// ==================================================
-popUpOpenWarNew.forEach(item => {
-    item.addEventListener('click', () => {
-        popUpWarBlockNew.forEach(item => {
-            item.classList.add('open')
-            popUpOpenContent.classList.add('open')
-            setTimeout(function(){
-                item.classList.remove('open')
-            }, 3500);
-        })
-    })
-    popUpWarClose.forEach(item => {
-        item.addEventListener('click', () => {
-            popUpWarBlockNew.forEach(item => {
-                item.classList.remove('open')
-                popUpOpenContent.classList.remove('open')
-            })
-        })
-    })
-})
-// ==================================================
+// ======================================================
 popUpOpen.forEach(item => {
     item.addEventListener('click', () => {
       popUpAcc.forEach(item => {
