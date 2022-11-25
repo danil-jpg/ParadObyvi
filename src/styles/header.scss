@@ -510,6 +510,9 @@
 .menu-trigger_1 {
     transition: 0.3s;
     min-width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .menu-trigger_1.active {
     display: block;
@@ -801,4 +804,36 @@ html.active {
 
 .menu-in-Ukraine.active {
     left: 0;
+}
+
+.menu-order {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 0.3s;
+    height: 96vh;
+    background: white;
+}
+
+.menu-order.active {
+    left: 0;
+}
+
+.menu-accessories {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 0.3s;
+    height: 96vh;
+    background: white;
+}
+
+.menu-accessories.active {
+    left: 0;
+}
+
+.menu__return-img {
+    cursor: pointer;
 }
