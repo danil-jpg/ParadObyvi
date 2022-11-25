@@ -5,10 +5,26 @@
 
 // * {
 @import "header.scss";
-@import "./main.scss";
+@import "popUp.scss";
+@import "main.scss";
 @import "footer.scss";
 @import "descrSection.scss";
 
 @import "media.scss";// * {
 //     // border: 1px solid red;
 // }
+body{
+    &.lock{
+        overflow: hidden;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 103;
+            background-color: rgba(0, 0, 0, 0.363);
+            width: 100vw;
+            height: 100vh;
+        }
+    }
+}

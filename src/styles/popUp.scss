@@ -1,0 +1,268 @@
+.pop-up-open{
+    transition: all 0.3s;
+}
+.pop-up-acc {
+    position: absolute;
+    top: 20%;
+    left: calc(50% -  240px) ;
+    z-index: -1;
+    overflow: hidden;
+    opacity: 0;
+    background-color: #fff;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 480px;
+    padding: 30px 20px 30px 20px;
+    transition: all 0.3s;
+    &.open{
+        transition: all 0.3s;
+        z-index: 150;
+        overflow: visible;
+        opacity: 1;
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: -webkit-fill-available;
+    }
+}
+.pop-up-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0px 0px 0px 75px;
+}
+.popUp-btn__close {
+    transition: all 0.2s;
+    background-color: transparent;
+}
+.popUp-select {
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.popUp-btn__tab {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 12px;
+    background-color: transparent;
+
+    width: 196px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.active{
+        border: 1px solid #000;
+    }
+}
+.popUp-login {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    input{
+        width: 300px;
+        height: 40px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        padding: 0px 12px 0px 12px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 12px;
+        color: rgba(0, 0, 0, 0.87);
+        border-radius: 4px;
+    }
+    &.active{
+        display: flex;
+    }
+}
+.popUp-recovery{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    margin-top: 15px;
+    color: rgba(0,0,0,.87);
+}
+.popUp-come{
+    width: 300px;
+    height: 42px;
+
+    background-color: rgb(40, 40, 40);
+    border-color: rgb(40, 40, 40);
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 17px;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 15px;
+}
+.popUp-login__input-pass {
+    position: relative;
+    margin-top: 10px;
+    >button{
+        position: absolute;
+        top: calc(50% - 4px) ;
+        right: 15px;
+        background-color: transparent;
+        height: 9px;
+    }
+}
+
+
+.popUp-login-new {
+    margin-top: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &.active{
+        display: flex;
+    }
+}
+.auth-register__subtitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    color: rgba(0,0,0,.87);
+    .red-text {
+        color: red;
+        margin-left: 3px;
+    }
+}
+
+.popUp-login__new-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    input{
+        width: 300px;
+        height: 40px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        padding: 0px 12px 0px 12px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 12px;
+        color: rgba(0, 0, 0, 0.87);
+        border-radius: 4px;
+        margin-top: 16px;
+    }
+}
+.popUp-login__new-drop {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+    gap: 5px;
+    >p{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        color: rgba(0,0,0,.87);
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+.popUp-login__new-form-second{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    &.open{
+        display: flex;
+    }
+    input{
+        width: 300px;
+        height: 40px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        padding: 0px 12px 0px 12px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 12px;
+        color: rgba(0, 0, 0, 0.87);
+        border-radius: 4px;
+        margin-top: 16px;
+    }
+}
+
+@media (max-width: 768px){
+    .pop-up-acc {
+        left: calc(50% - 170px);
+        max-width: 330px;
+        padding: 25px 20px;
+    }
+    .pop-up-logo{
+        padding: 0px 0px 0px 0px;
+        gap: 0;
+        svg{
+            width: 250px;
+        }
+    }
+    .popUp-login{
+        &.active{
+            width: 100%;
+        }
+    }
+    .popUp-btn__close{
+        position: relative;
+        right: -15px;
+        top: -15px;
+    }
+    .popUp-btn__tab{
+        width: 100%;
+    }
+    .popUp-login input{
+        width: 100%;
+    }
+    .popUp-login__input-pass{
+        width: 100%;
+    }
+    .popUp-login__new-form{
+        width: 100%;
+        >input{
+            width: 100%;
+        }
+    }
+    .popUp-login__new-form-second{
+        &.open{
+            width: 100%;
+        }
+        >input{
+            width: 100%;
+        }
+    }
+    .popUp-come{
+        width: 100%;
+    }
+}
+
+@media (max-width: 374px){
+    .pop-up-acc {
+        left: calc(50% - 150px);
+        max-width: 300px;
+    }
+    .pop-up-logo svg {
+        width: 215px;
+    }
+}

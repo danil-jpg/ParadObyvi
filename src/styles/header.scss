@@ -1,3 +1,6 @@
+.header {
+    position: relative;
+}
 .header-problem {
     background-color: #999999;
     min-height: 35px;
@@ -463,6 +466,7 @@
     transition: 0.3s;
     height: calc(100vh - 147px);
     background: white;
+    overflow-y: scroll;
 }
 .header__mobile-menu.active {
     width: 100vw;
@@ -669,10 +673,15 @@
     width: 100%;
     position: absolute;
     top: 0;
-    left: 0;
-
+    left: -100%;
+    transition: 0.3s;
     height: 96vh;
+
     background: white;
+}
+
+.menu__news.active {
+    left: 0;
 }
 .menu__return-block {
     display: flex;
@@ -719,8 +728,8 @@
 
 .mobile-menu__feedback_spec {
     display: grid;
-    bottom: 10%;
-    grid-template-columns: 82% 1fr 1fr;
+    bottom: -5%;
+    grid-template-columns: 73% 1fr 1fr;
     .feedback-btn {
         width: 90%;
         justify-self: center;
@@ -729,4 +738,52 @@
 
 html.active {
     overflow-y: hidden;
+}
+
+.scroll {
+}
+
+.menu-for-mens {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 0.3s;
+    height: 96vh;
+
+    background: #fff;
+}
+
+.menu-for-mens.active {
+    left: 0;
+}
+
+.menu-for-womens {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 0.3s;
+    height: 96vh;
+
+    background: #fff;
+}
+
+.menu-for-womens.active {
+    left: 0;
+}
+
+.menu-for-kids {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 0.3s;
+    height: 96vh;
+
+    background: white;
+}
+
+.menu-for-kids.active {
+    left: 0;
 }
