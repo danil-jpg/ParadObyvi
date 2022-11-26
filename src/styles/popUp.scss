@@ -2,7 +2,7 @@
     transition: all 0.3s;
 }
 .pop-up-acc {
-    position: absolute;
+    position: fixed;
     top: 20%;
     left: calc(50% -  240px) ;
     z-index: -1;
@@ -303,7 +303,7 @@
     height: 66px;
     width: 66px;
     display: flex;
-    z-index: 110;
+    z-index: 100;
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat';

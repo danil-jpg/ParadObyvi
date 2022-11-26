@@ -81,8 +81,24 @@
     }
 }
 .header-main__drop-buyer {
+    >img{
+        transition: all 0.3s;
+    }
+    &.active{
+        img{
+            transform: rotate(180deg);
+        }
+    }
 }
 .header-main__drop-tell {
+    >img{
+        transition: all 0.3s;
+    }
+    &.active{
+        img{
+            transform: rotate(180deg);
+        }
+    }
 }
 .header-logo {
     flex-grow: 1;
