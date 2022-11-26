@@ -19,7 +19,7 @@ body{
         overflow: hidden;
         &::before{
             content: '';
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             z-index: 150;

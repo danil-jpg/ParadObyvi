@@ -40,36 +40,36 @@ popUpOpenWar.forEach((item)=> {
 
 // ======================================================
 popUpOpen.forEach(item => {
-    item.addEventListener('click', () => {
-      popUpAcc.forEach(item => {
-        item.classList.toggle('open')
-        bodyLock.classList.toggle('lock')
-      })
+  item.addEventListener('click', () => {
+    popUpAcc.forEach(item => {
+      item.classList.toggle('open')
+      bodyLock.classList.toggle('lock')
     })
   })
-  popUpClose.forEach(item => {
-    item.addEventListener('click', () => {
-      popUpAcc.forEach(item => {
-        item.classList.remove('open')
-        bodyLock.classList.remove('lock')
-      })
+})
+popUpClose.forEach(item => {
+  item.addEventListener('click', () => {
+    popUpAcc.forEach(item => {
+      item.classList.remove('open')
+      bodyLock.classList.remove('lock')
     })
   })
+})
 
-  popUpBtn.forEach(item => {
-    item.addEventListener('click', () => {
-      popUpTabLeft.classList.toggle('active')
-      popUpTabRight.classList.toggle('active')
-      popUpLogin.classList.toggle('active')
-      popUpNewClient.classList.toggle('active')
-    })
+popUpBtn.forEach(item => {
+  item.addEventListener('click', () => {
+    popUpTabLeft.classList.toggle('active')
+    popUpTabRight.classList.toggle('active')
+    popUpLogin.classList.toggle('active')
+    popUpNewClient.classList.toggle('active')
   })
+})
 
-  popUpDrop.forEach(item => {
-    item.addEventListener('click', () => {
-      popUpDropForm.classList.toggle('open')
-    })
+popUpDrop.forEach(item => {
+  item.addEventListener('click', () => {
+    popUpDropForm.classList.toggle('open')
   })
+})
   // Scroll===================================================
   const scrollBtn = document.querySelector('.scrol-top__btn')
   window.onscroll = () => {
@@ -82,6 +82,20 @@ popUpOpen.forEach(item => {
   scrollBtn.onclick = () => {
     window.scrollTo(0, 0)
   }
+  // ============================================================
+  document.querySelector('.header-main__drop-buyer').addEventListener('click', () => {
+    document.querySelector('.header-main__drop-buyer').classList.toggle('active')
+    document.querySelector('.drop-buyer-block__list').classList.toggle('active')
+    document.querySelector('.header-main__drop-tell').classList.remove('active')
+    document.querySelector('.drop-tell-block__list').classList.remove('active')
+  })
+
+  document.querySelector('.header-main__drop-tell').addEventListener('click', () => {
+    document.querySelector('.header-main__drop-tell').classList.toggle('active')
+    document.querySelector('.drop-tell-block__list').classList.toggle('active')
+    document.querySelector('.header-main__drop-buyer').classList.remove('active')
+    document.querySelector('.drop-buyer-block__list').classList.remove('active')
+  })
 }
 
 export default popUpPage
