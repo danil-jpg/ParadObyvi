@@ -73,5 +73,20 @@ function swiperProject () {
     }
 
   })
+
+
+const heart = document.querySelectorAll('.sneakers-block__like-icon')
+
+heart.forEach(item => {
+  item.addEventListener('click', (e) => {
+    if (e.target.hasAttribute('true')) {
+      e.target.setAttribute('src', 'img/swiper/hart.webp')
+      e.target.removeAttribute('true', '')
+    } else {
+      e.target.setAttribute('src', 'img/swiper/heart-painted.webp')
+      e.target.setAttribute('true', '')
+    }
+  })
+})
 }
 export default swiperProject

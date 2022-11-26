@@ -226,12 +226,16 @@
     background-color: #fff;
     box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
     padding: 25px 20px;
-    // position: relative;
-    // right: -400%;
-    display: none;
+    position: relative;
+    right: -400%;
     transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.35s;
     &.open{
-        display: block;
+        right: 0%;
+        opacity: 1;
+        visibility: visible;
     }
 }
 .pop-up__war-close {
@@ -273,7 +277,42 @@
         }
     }
 }
-
+.scrol-top__btn{
+    width: 40px;
+    height: 40px;
+    background: #999;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: 0.1s;
+    &_hide{
+        opacity: 0;
+    }
+}
+.evaluation__btn{
+    position: fixed;
+    left: 15px;
+    bottom: 15px;
+    height: 66px;
+    width: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    white-space: normal;
+    color: #fff;
+    background-color: rgb(232, 56, 65);
+    border-color: rgb(232, 56, 65);
+    opacity: 1;
+}
 @media (max-width: 768px){
     .pop-up-acc {
         left: calc(50% - 170px);
