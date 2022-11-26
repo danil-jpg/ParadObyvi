@@ -1,16 +1,44 @@
 function popUpPage () {
-  const popUpOpen = document.querySelectorAll('.pop-up-open')
-  const popUpAcc = document.querySelectorAll('.pop-up-acc')
-  const popUpBtn = document.querySelectorAll('.popUp-select')
-  const popUpClose = document.querySelectorAll('.popUp-btn__close')
-  const popUpTabLeft = document.querySelectorAll('.popUp-btn__tab')[0]
-  const popUpTabRight = document.querySelectorAll('.popUp-btn__tab')[1]
-  const bodyLock = document.querySelector('body')
-  const popUpLogin = document.querySelector('.popUp-login')
-  const popUpNewClient = document.querySelector('.popUp-login-new')
-  const popUpDrop = document.querySelectorAll('.popUp-login__new-drop')
-  const popUpDropForm = document.querySelector('.popUp-login__new-form-second')
-  popUpOpen.forEach(item => {
+let popUpOpen = document.querySelectorAll('.pop-up-open');
+let popUpAcc = document.querySelectorAll('.pop-up-acc');
+let popUpBtn = document.querySelectorAll('.popUp-select');
+let popUpClose = document.querySelectorAll('.popUp-btn__close');
+let popUpTabLeft = document.querySelectorAll('.popUp-btn__tab')[0];
+let popUpTabRight = document.querySelectorAll('.popUp-btn__tab')[1];
+let bodyLock = document.querySelector('body');
+let popUpLogin = document.querySelector('.popUp-login');
+let popUpNewClient = document.querySelector('.popUp-login-new');
+let popUpDrop = document.querySelectorAll('.popUp-login__new-drop');
+let popUpDropForm = document.querySelector('.popUp-login__new-form-second');
+
+let popUpOpenWar = document.querySelectorAll('.pop-up__war-open');
+let popUpOpenContent = document.querySelector('.pop-up-war');
+let popUpWarClose = document.querySelector('.pop-up__war-close');
+let popUpWarBlock = document.querySelectorAll('.pop-up__war-block');
+
+
+
+// ======================================================
+popUpOpenWar.forEach((item)=> {
+  item.addEventListener('click', () => {
+    popUpOpenContent.classList.add('open')
+    popUpWarBlock.forEach((item, index) => {
+      popUpWarBlock[index].classList.add('open')
+      setTimeout(function(){
+        item.classList.remove('open')
+      }, 3500);
+    })
+    popUpWarClose.addEventListener('click', () => {
+      popUpWarBlock.forEach(item => {
+        item.classList.remove('open')
+      })
+      popUpOpenContent.classList.remove('open')
+    })
+  })
+})
+
+// ======================================================
+popUpOpen.forEach(item => {
     item.addEventListener('click', () => {
       popUpAcc.forEach(item => {
         item.classList.toggle('open')
@@ -41,6 +69,18 @@ function popUpPage () {
       popUpDropForm.classList.toggle('open')
     })
   })
+  // Scroll===================================================
+  const scrollBtn = document.querySelector('.scrol-top__btn')
+  window.onscroll = () => {
+    if(window.scrollY > 300){
+      scrollBtn.classList.remove('scrol-top__btn_hide')
+    } else if (window.scrollY < 300) {
+      scrollBtn.classList.add('scrol-top__btn_hide')
+    }
+  }
+  scrollBtn.onclick = () => {
+    window.scrollTo(0, 0)
+  }
 }
 
 export default popUpPage

@@ -2,11 +2,11 @@ import Swiper, { Navigation } from 'swiper'
 
 function swiperProject () {
   const swiperTop = document.querySelector('.swiper-top')
-  const swiperSneakers = document.querySelector('.swiper-sneakers')
+  const swiperSneakers = document.querySelectorAll('.swiper-sneakers')
   const swiperBrends = document.querySelector('.swiper-brends')
-  const swiperSneakers2 = document.querySelector('.swiper-sneakers-2')
-
-  // ========================================
+  const prevArrow = document.querySelectorAll('.swiper-sneakers__button-prev')
+  const nextArrow = document.querySelectorAll('.swiper-sneakers__button-next')
+// ========================================
   const swiperNew = new Swiper(swiperTop, {
     slidesPerView: 1,
     loop: true,
@@ -18,45 +18,43 @@ function swiperProject () {
     }
 
   })
-  // ========================================
-
-  // ========================================
-  const swiperSneak = new Swiper(swiperSneakers, {
-    slidesPerView: 5,
-    loop: true,
-    spaceBetween: 5,
-    modules: [Navigation],
-    breakpoints: {
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 15
-      },
-      960: {
-        slidesPerView: 3
-      },
-      1200: {
+// ========================================
+  swiperSneakers.forEach((item, index) => {
+      const swiperSneak = new Swiper(item, {
         slidesPerView: 5,
-        spaceBetween: 5
-      }
-    },
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-sneakers__button-next',
-      prevEl: '.swiper-sneakers__button-prev'
-    }
-
+        loop: true,
+        spaceBetween: 5,
+        modules: [Navigation],
+        breakpoints: {
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 15
+          },
+          960: {
+            slidesPerView: 3
+          },
+          1200: {
+            slidesPerView: 5,
+            spaceBetween: 5
+          }
+        },
+        // Navigation arrows
+        navigation: {
+          nextEl: nextArrow[index],
+          prevEl: prevArrow[index]
+        }
+      })
   })
-  // ========================================
-
-  // ========================================
+// ========================================
   const swiper = new Swiper(swiperBrends, {
     slidesPerView: 8,
     spaceBetween: 30,
+    centeredSlides: true,
     loop: true,
     modules: [Navigation],
     breakpoints: {
       320: {
-        slidesPerView: 3,
+        slidesPerView: 2.43,
         spaceBetween: 0
       },
       960: {
@@ -75,48 +73,20 @@ function swiperProject () {
     }
 
   })
-  // ========================================
 
-  // ========================================
-  const swiperboots = new Swiper(swiperSneakers2, {
-    slidesPerView: 5,
-    loop: true,
-    spaceBetween: 5,
-    modules: [Navigation],
-    breakpoints: {
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 15
-      },
-      960: {
-        slidesPerView: 3
-      },
-      1200: {
-        slidesPerView: 5,
-        spaceBetween: 5
-      }
-    },
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-sneakers-2__button-next',
-      prevEl: '.swiper-sneakers-2__button-prev'
+
+const heart = document.querySelectorAll('.sneakers-block__like-icon')
+
+heart.forEach(item => {
+  item.addEventListener('click', (e) => {
+    if (e.target.hasAttribute('true')) {
+      e.target.setAttribute('src', 'img/swiper/hart.webp')
+      e.target.removeAttribute('true', '')
+    } else {
+      e.target.setAttribute('src', 'img/swiper/heart-painted.webp')
+      e.target.setAttribute('true', '')
     }
   })
-  // ========================================
-
-  const heart = document.querySelectorAll('.sneakers-block__like-icon')
-
-  heart.forEach(item => {
-    item.addEventListener('click', (e) => {
-      if (e.target.hasAttribute('true')) {
-        e.target.setAttribute('src', 'img/swiper/hart.webp')
-        e.target.removeAttribute('true', '')
-      } else {
-        e.target.setAttribute('src', 'img/swiper/heart-painted.webp')
-        e.target.setAttribute('true', '')
-      }
-    })
-  })
+})
 }
-
 export default swiperProject
