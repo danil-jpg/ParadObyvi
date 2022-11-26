@@ -3,7 +3,7 @@ function mobileBurger () {
   const allTriggers = document.querySelectorAll('.header-actible-item')
 
   const menuTrigger1 = document.querySelector('.menu-trigger_1')
-  const menuTrigger2 = document.querySelector('.menu-trigger_2')
+  const menuTrigger2 = document.querySelectorAll('.menu-trigger_2')
   const menuTrigger3 = document.querySelector('.menu-trigger_3')
 
   const menusImg = document.querySelector('.trigger-img_pc')
@@ -47,7 +47,7 @@ function mobileBurger () {
     menu2.classList.remove('active')
     menu.classList.toggle('active')
     menuTrigger1.classList.add('active')
-    menuTrigger2.classList.remove('active')
+    menuTrigger2[0].classList.remove('active')
 
     if (menu.classList.contains('active')) {
       html.classList.add('active')
@@ -58,26 +58,28 @@ function mobileBurger () {
       html.classList.remove('active')
       menusImg.setAttribute('src', './img/header/burger-mob.svg')
       menuTrigger1.classList.remove('active')
-      menuTrigger2.classList.remove('active')
+      menuTrigger2[0].classList.remove('active')
     }
   })
 
-  menuTrigger2.addEventListener('click', () => {
-    menu.classList.remove('active')
-    menu2.classList.toggle('active')
-    menuTrigger2.classList.add('active')
-    menuTrigger1.classList.remove('active')
-
-    if (menu.classList.contains('active') || menu2.classList.contains('active')) {
-      html.classList.add('active')
-      menusImg.setAttribute('src', './img/header/burger-mob.svg')
-    } else {
-      html.classList.remove('active')
+  menuTrigger2.forEach(item => {
+    item.addEventListener('click', () => {
+      menu.classList.remove('active')
+      menu2.classList.toggle('active')
+      console.log(menuTrigger2[0])
+      menuTrigger2[0].classList.add('active')
       menuTrigger1.classList.remove('active')
-      menuTrigger2.classList.remove('active')
-    }
-  })
 
+      if (menu.classList.contains('active') || menu2.classList.contains('active')) {
+        html.classList.add('active')
+        menusImg.setAttribute('src', './img/header/burger-mob.svg')
+      } else {
+        html.classList.remove('active')
+        menuTrigger1.classList.remove('active')
+        menuTrigger2[0].classList.remove('active')
+      }
+    })
+  })
   // function menuOldVer () {
   //   menuTrigger1.addEventListener('click', () => {
   //     menuTrigger1.toggleAttribute(true)
