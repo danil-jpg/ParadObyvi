@@ -287,10 +287,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 999;
-    transition: 0.1s;
+    z-index: 110;
+    transition: 0.3s;
     &_hide{
         opacity: 0;
+    }
+    &:hover{
+        background: rgba(153, 153, 153, 0.541);
     }
 }
 .evaluation__btn{
@@ -300,6 +303,7 @@
     height: 66px;
     width: 66px;
     display: flex;
+    z-index: 110;
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat';
@@ -312,6 +316,10 @@
     background-color: rgb(232, 56, 65);
     border-color: rgb(232, 56, 65);
     opacity: 1;
+    transition: 0.3s;
+    &:hover{
+        background-color: rgba(232, 56, 65, 0.6);
+    }
 }
 @media (max-width: 768px){
     .pop-up-acc {
