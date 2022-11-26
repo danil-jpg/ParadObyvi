@@ -26,6 +26,7 @@ popUpOpenWar.forEach((item)=> {
       popUpWarBlock[index].classList.add('open')
       setTimeout(function(){
         item.classList.remove('open')
+        popUpOpenContent.classList.remove('open')
       }, 3500);
     })
     popUpWarClose.addEventListener('click', () => {
