@@ -43,6 +43,17 @@ function mobileBurger () {
   const accessoriesTrigger = document.querySelectorAll('.accsesoriesList')
   const accessoriesMenu = document.querySelector('.menu-accessories')
 
+  const customerTrigger = document.querySelectorAll('.customerList')
+  const customerMenu = document.querySelector('.menu__for-customers')
+
+  const contactsTrigger = document.querySelectorAll('.contactsList')
+  const contactsMenu = document.querySelector('.menu__contacts')
+
+  const graphicTrigger = document.querySelectorAll('.graphicList')
+  const graphicMenu = document.querySelector('.menu__graphic')
+
+  console.log(graphicTrigger, graphicMenu)
+
   menuTrigger1.addEventListener('click', () => {
     menu2.classList.remove('active')
     menu.classList.toggle('active')
@@ -171,6 +182,14 @@ function mobileBurger () {
   // For order
 
   dropDownList(accessoriesTrigger, accessoriesMenu)
+  // accsessories
+
+  dropDownList(customerTrigger, customerMenu)
+  // customer menu
+
+  dropDownList(contactsTrigger, contactsMenu)
+
+  dropDownList(graphicTrigger, graphicMenu)
 
   function dropDownList (triggerClass, dropDownListClass) {
     triggerClass.forEach(item => {
