@@ -837,3 +837,33 @@ html.active {
 .menu__return-img {
     cursor: pointer;
 }
+
+.header__mobile-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu__feedback {
+    flex-grow: 2;
+    display: flex;
+    position: static;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-10px);
+    margin-bottom: 50px;
+}
+
+.mobile-menu__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu__feedback {
+    flex-grow: 2;
+    display: flex;
+    position: static;
+    align-items: end;
+    justify-content: center;
+    transform: translate(-10px);
+}
