@@ -973,12 +973,15 @@ html.active {
     margin-bottom: 40px;
 }
 
-a {
-    color: unset;
-}
+header,
+footer {
+    a {
+        color: unset;
+    }
 
-a:visited {
-    color: unset;
+    a:visited {
+        color: unset;
+    }
 }
 
 .footer__graphic_header {
