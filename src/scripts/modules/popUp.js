@@ -69,6 +69,18 @@ popUpOpen.forEach(item => {
       popUpDropForm.classList.toggle('open')
     })
   })
+  // Scroll===================================================
+  const scrollBtn = document.querySelector('.scrol-top__btn')
+  window.onscroll = () => {
+    if(window.scrollY > 300){
+      scrollBtn.classList.remove('scrol-top__btn_hide')
+    } else if (window.scrollY < 300) {
+      scrollBtn.classList.add('scrol-top__btn_hide')
+    }
+  }
+  scrollBtn.onclick = () => {
+    window.scrollTo(0, 0)
+  }
 }
 
 export default popUpPage
