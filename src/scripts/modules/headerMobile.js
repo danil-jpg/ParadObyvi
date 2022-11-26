@@ -52,6 +52,11 @@ function mobileBurger () {
   const graphicTrigger = document.querySelectorAll('.graphicList')
   const graphicMenu = document.querySelector('.menu__graphic')
 
+  const languageTrigger = document.querySelectorAll('.languageList')
+  const languageMenu = document.querySelector('.menu__language')
+  // languageList
+  // menu__language
+
   console.log(graphicTrigger, graphicMenu)
 
   menuTrigger1.addEventListener('click', () => {
@@ -190,6 +195,8 @@ function mobileBurger () {
   dropDownList(contactsTrigger, contactsMenu)
 
   dropDownList(graphicTrigger, graphicMenu)
+
+  dropDownList(languageTrigger, languageMenu)
 
   function dropDownList (triggerClass, dropDownListClass) {
     triggerClass.forEach(item => {

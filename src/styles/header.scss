@@ -954,3 +954,35 @@ html.active {
 .menu__graphic.active {
     left: 0;
 }
+
+.menu__language {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 0.3s;
+    height: 96vh;
+    background: white;
+}
+
+.menu__language.active {
+    left: 0;
+}
+
+.menu__item-title {
+    margin-bottom: 40px;
+}
+
+a {
+    color: unset;
+}
+
+a:visited {
+    color: unset;
+}
+
+.footer__graphic_header {
+    order: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
