@@ -65,20 +65,20 @@
         margin-right: 1px;
     }
 }
-@media (max-width: 1200px){
-    .swiper-sneakers{
+@media (max-width: 1200px) {
+    .swiper-sneakers {
         position: relative;
         width: 960px;
         margin: 12px auto 0;
         overflow: hidden;
         padding: 0 15px;
     }
-    .sneakers-block{
+    .sneakers-block {
         width: auto;
     }
-    .swiper-slide-top{
-        picture{
-            img{
+    .swiper-slide-top {
+        picture {
+            img {
                 inline-size: 100%;
             }
         }
@@ -133,44 +133,44 @@
             }
         }
     }
-    .swiper-top__container{
+    .swiper-top__container {
         padding: 0px 0px 0px 0px;
     }
-    .swiper-slide-top{
-        >img{
+    .swiper-slide-top {
+        > img {
             width: 100%;
         }
     }
     .swiper-top__button-prev,
-    .swiper-top__button-next{
+    .swiper-top__button-next {
         display: none;
     }
-    .swiper-sneakers{
+    .swiper-sneakers {
         width: auto;
     }
 }
-@media (max-width: 767px){
+@media (max-width: 767px) {
     .swiper-sneakers__button-next,
-    .swiper-sneakers__button-prev{
+    .swiper-sneakers__button-prev {
         display: none;
     }
     .swiper-sneakers__container {
         margin-top: 22px;
     }
-    .swiper-sneakers__title{
+    .swiper-sneakers__title {
         font-size: 20px;
     }
-    .sneakers-block__shoes{
-        >img{
+    .sneakers-block__shoes {
+        > img {
             width: 141.94px;
             height: 106.47px;
         }
     }
-    .sneakers-block__shoes-prefix{
-        span{
+    .sneakers-block__shoes-prefix {
+        span {
             height: 14px;
         }
-        p{
+        p {
             height: 14px;
         }
     }
@@ -180,23 +180,23 @@
         border: 1px solid #f1f1f1;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
-    .sneakers-matirial-top{
+    .sneakers-matirial-top {
         visibility: visible;
         opacity: 1;
     }
-    .sneakers-matirial-bottom{
+    .sneakers-matirial-bottom {
         visibility: visible;
-        opacity: 1; 
+        opacity: 1;
     }
-    .sneakers-btn{
+    .sneakers-btn {
         visibility: visible;
-        opacity: 1; 
+        opacity: 1;
     }
     .swiper-brends__button-next,
-    .swiper-brends__button-prev{
+    .swiper-brends__button-prev {
         display: none;
     }
-    .sneakers-block__shoes{
+    .sneakers-block__shoes {
         margin-top: -5px;
     }
     section.swiper-sneakers-new {
@@ -396,11 +396,12 @@
         display: none !important;
     }
 }
-@media (max-width: 576px){
-    .sneakers-block__price{
+@media (max-width: 576px) {
+    .sneakers-block__price {
         gap: 18px;
         margin-top: 13px;
-        span,p{
+        span,
+        p {
             font-size: 10px;
             line-height: 12px;
         }
@@ -408,19 +409,19 @@
     .swiper-sneakers {
         padding: 0;
     }
-    .sneakers-block__like-icon{
+    .sneakers-block__like-icon {
         width: 18.34px;
         height: 15.28px;
     }
-    .sneakers-name{
+    .sneakers-name {
         font-size: 10px;
         line-height: 12px;
         margin-top: 1px;
-    }            
+    }
     .sneakers-block__like {
         padding: 0 13px 0 12px;
-        img{
-            &:nth-child(1){
+        img {
+            &:nth-child(1) {
                 visibility: visible;
                 width: 12.61px;
                 height: 12.32px;
@@ -429,35 +430,35 @@
     }
     .sneakers-block__shoes-prefix {
         bottom: -10px;
-        p{
+        p {
             width: 53px;
         }
-        span{
+        span {
             width: 73px;
         }
     }
-    .sneakers-id-number{
+    .sneakers-id-number {
         font-size: 10px;
         line-height: 12px;
         margin-top: 3px;
     }
-    .sneakers-pair{
+    .sneakers-pair {
         font-size: 10px;
         line-height: 12px;
         margin-top: 1px;
     }
-    .sneakers-matirial-top{
+    .sneakers-matirial-top {
         font-size: 10px;
         line-height: 12px;
         margin-top: 4px;
     }
-    .sneakers-matirial-bottom{
+    .sneakers-matirial-bottom {
         font-size: 10px;
         line-height: 12px;
     }
-    .sneakers-manufacturer{
+    .sneakers-manufacturer {
         display: block;
-        font-family: 'Montserrat';
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 500;
         font-size: 10px;
@@ -467,38 +468,38 @@
         justify-content: center;
         text-align: center;
         margin-top: 3px;
-        span{
+        span {
             color: #828282;
         }
-        p{
+        p {
             color: #282828;
         }
     }
-    .sneakers-btn{
+    .sneakers-btn {
         font-size: 10px;
         line-height: 12px;
         margin-top: 4px;
     }
-    .sneakers-btn-left{
+    .sneakers-btn-left {
         height: 25px;
         width: 73px;
     }
-    .sneakers-btn-right{
+    .sneakers-btn-right {
         height: 25px;
         width: 72px;
     }
-    .swiper-brends__container{
+    .swiper-brends__container {
         overflow: hidden;
         margin-top: 25px;
         padding: 0px 0px 0px 0px;
     }
-    .swiper-brends__block{
+    .swiper-brends__block {
         padding: 0px 0px 0px 0px;
     }
-    .swiper-brends{
+    .swiper-brends {
         overflow: visible;
     }
-    .swiper-brends__title{
+    .swiper-brends__title {
         font-size: 20px;
     }
     .swiper-brends {
@@ -506,8 +507,8 @@
         max-width: none;
         margin: -7px auto 0;
     }
-    .swiper-slide-brends{
-        img{
+    .swiper-slide-brends {
+        img {
             width: 108.14px;
             height: auto;
         }
@@ -515,17 +516,23 @@
     .swiper-brends__btn {
         margin: -2px auto 0;
     }
-    .swiper-slide-top{
-        picture{
+    .swiper-sneakers-2__container {
+        margin-top: 19px;
+    }
+    .swiper-sneakers-2 {
+        margin-top: 20px;
+    }
+    .swiper-slide-top {
+        picture {
             width: 100%;
-            img{
+            img {
                 inline-size: 100%;
             }
         }
     }
     .sneakers-block__icon {
         height: 106.47px;
-        >img{
+        > img {
             width: 134px;
         }
     }
@@ -561,12 +568,10 @@
 }
 @media screen and (max-width: 359px) {
     .header__mobile-menu {
-        top: 48px;
+        // top: 48px;
     }
-    .sneakers-block__shoes>img {
+    .sneakers-block__shoes > img {
         width: 85%;
         height: auto;
     }
 }
-
-

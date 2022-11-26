@@ -806,6 +806,21 @@ html.active {
     left: 0;
 }
 
+.menu__for-customers {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 0.3s;
+    height: 96vh;
+
+    background: white;
+}
+
+.menu__for-customers.active {
+    left: 0;
+}
+
 .menu-order {
     width: 100%;
     position: absolute;
@@ -836,4 +851,141 @@ html.active {
 
 .menu__return-img {
     cursor: pointer;
+}
+
+.header__mobile-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu__feedback {
+    flex-grow: 2;
+    display: flex;
+    position: static;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-10px);
+    margin-bottom: 50px;
+}
+
+.mobile-menu__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu__feedback {
+    flex-grow: 2;
+    display: flex;
+    position: static;
+    align-items: end;
+    justify-content: center;
+    transform: translate(-10px);
+}
+
+.menu__phone-texts-wr {
+    margin: 0 auto;
+    width: 56%;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.menu__item_btn {
+    width: 100%;
+    background: transparent;
+    border: 1px solid black;
+    height: 34px;
+    margin-top: 15px;
+    transition: 0.3s;
+    &:hover {
+        background: black;
+        color: white;
+    }
+}
+
+.menu__contacts {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 0.3s;
+    height: 96vh;
+    background: white;
+}
+
+.menu__contacts.active {
+    left: 0;
+}
+
+.menu__graphic {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 0.3s;
+    height: 96vh;
+    background: white;
+
+    .menu__news_texts-wr {
+        width: 77%;
+    }
+
+    .footer__graphic_left,
+    .footer__graphic_right {
+        display: block;
+        margin-left: 0;
+    }
+    .footer__graphic_left {
+        .footer__item {
+            margin-left: 0px;
+            text-align: initial;
+            font-weight: 600;
+        }
+    }
+
+    .footer__graphic_right {
+        .footer__item {
+            text-align: end;
+            font-weight: 600;
+        }
+    }
+}
+
+.menu__graphic.active {
+    left: 0;
+}
+
+.menu__language {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 0.3s;
+    height: 96vh;
+    background: white;
+}
+
+.menu__language.active {
+    left: 0;
+}
+
+.menu__item-title {
+    margin-bottom: 40px;
+}
+
+header,
+footer {
+    a {
+        color: unset;
+    }
+
+    a:visited {
+        color: unset;
+    }
+}
+
+.footer__graphic_header {
+    order: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
