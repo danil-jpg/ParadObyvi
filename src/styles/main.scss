@@ -48,6 +48,7 @@
     margin: 12px auto 0;
     overflow: hidden;
     padding: 0;
+    min-height: 385.14px;
 }
 .sneakers-block {
     width: 230px;
@@ -368,12 +369,21 @@
     >img{
         width: auto;
         height: fit-content;
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
     }
 }
 .swiper-slide-brends{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 70px;
+    >img{
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
 }
 .sneakers-block__img-active{
     visibility: visible !important;
@@ -504,4 +514,7 @@
     &:hover{
         background-color: rgba(230, 227, 227, 0.603) !important;
     }
+}
+.width-3__column{
+    min-width: 635px;
 }
