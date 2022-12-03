@@ -1,6 +1,14 @@
 @media (max-width: 1243px) {
+
     .header-menu-link {
         font-size: 13px;
+    }
+    .sub-menu__block-level-1 {
+        top: 11px;
+        padding: 9px 0 0;
+    }
+    .sub-menu__block-level-2{
+        top: 9px;
     }
     .header-main__container {
         padding: 0 15px 0 15px;
@@ -63,6 +71,9 @@
     }
     .header-problem__close {
         margin-right: 1px;
+    }
+    .width-3__column{
+        min-width: 482px;
     }
 }
 @media (max-width: 1200px) {
