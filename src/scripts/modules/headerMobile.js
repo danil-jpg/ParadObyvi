@@ -28,14 +28,41 @@ function mobileBurger () {
   const mensTrigger = document.querySelectorAll('.menList')
   const mensMenu = document.querySelector('.menu-for-mens')
 
+  const mensTriggerNews = document.querySelectorAll('.menListNews')
+  const mensMenuNews = document.querySelector('.menu-for-mens_news')
+
   const womenTrigger = document.querySelectorAll('.womenList')
   const womensMenu = document.querySelector('.menu-for-womens')
+
+  const womenTriggerNews = document.querySelectorAll('.womenListNews')
+  const womenMenuNews = document.querySelector('.menu-for-womens_news')
 
   const kidsTrigger = document.querySelectorAll('.kidsList')
   const kidsMenu = document.querySelector('.menu-for-kids')
 
+  const kidsTriggerNews = document.querySelectorAll('.kidsListNews')
+  const kidsMenuNews = document.querySelector('.menu-for-kids_news')
+
+  const madeInUkraineMenTrigger = document.querySelectorAll('.menListUkraine')
+  const madeInUkraineMenMenu = document.querySelector('.menu-for-mens_Ukraine')
+
+  const madeInUkraineWomenTrigger = document.querySelectorAll('.womenListUkraine')
+  const madeInUkraineWomenMenu = document.querySelector('.menu-for-womens_Ukraine')
+
+  const madeInUkraineKidsTrigger = document.querySelectorAll('.kidsListUkraine')
+  const madeInUkraineKidsMenu = document.querySelector('.menu-for-kids_Ukraine')
+
   const madeInUkraineTrigger = document.querySelectorAll('.madeInUkraineList')
   const madeInUkraineMenu = document.querySelector('.menu-in-Ukraine')
+
+  const orderMenList = document.querySelectorAll('.menListOrder')
+  const orderMenMenu = document.querySelector('.menu-for-mens_Order')
+
+  const OrderwomenList = document.querySelectorAll('.womenListOrder')
+  const orderWomenMenu = document.querySelector('.menu-for-womens_order')
+
+  const OrderKidsList = document.querySelectorAll('.kidsListOrder')
+  const orderKidsMenu = document.querySelector('.menu-for-kids_Order')
 
   const forOrderTrigger = document.querySelectorAll('.forOrderList')
   const forOrderMenu = document.querySelector('.menu-order')
@@ -54,8 +81,6 @@ function mobileBurger () {
 
   const languageTrigger = document.querySelectorAll('.languageList')
   const languageMenu = document.querySelector('.menu__language')
-  // languageList
-  // menu__language
 
   console.log(graphicTrigger, graphicMenu)
 
@@ -96,62 +121,6 @@ function mobileBurger () {
       }
     })
   })
-  // function menuOldVer () {
-  //   menuTrigger1.addEventListener('click', () => {
-  //     menuTrigger1.toggleAttribute(true)
-
-  //     if (menuTrigger1.hasAttribute(true)) {
-  //       document.querySelectorAll('.header__mobile-menu:not(:nth-of-type(1))').forEach(item => {
-  //         item.classList.remove('active')
-
-  //         allTriggers.forEach(item => {
-  //           item.classList.remove('active')
-  //         })
-  //       })
-  //     }
-
-  //     menuTrigger1.classList.toggle('active')
-  //     menusImg.toggleAttribute('true')
-
-  //     if (menusImg.hasAttribute('true')) {
-  //       menusImg.setAttribute('src', 'img/header/close_icon.svg')
-  //     } else {
-  //       menusImg.setAttribute('src', './img/header/burger-mob.svg')
-  //     }
-
-  //     menu.classList.toggle('active')
-
-  //     // elemsToBlur.forEach(item => {
-  //     //   item.classList.toggle('blur4px')
-  //     // })
-
-  //     // html.classList.toggle('active')
-  //   })
-
-  //   menuTrigger2.addEventListener('click', () => {
-  //     menuTrigger2.toggleAttribute(true)
-
-  //     if (menuTrigger2.hasAttribute(true)) {
-  //       document.querySelectorAll('.header__mobile-menu:not(:nth-of-type(2))').forEach(item => {
-  //         item.classList.remove('active')
-
-  //         allTriggers.forEach(item => {
-  //           item.classList.remove('active')
-  //         })
-  //       })
-  //     }
-
-  //     menuTrigger2.classList.toggle('active')
-
-  //     // elemsToBlur.forEach(item => {
-  //     //   item.classList.toggle('blur4px')
-  //     // })
-
-  //     menu2.classList.toggle('active')
-
-  //     // html.classList.toggle('active')
-  //   })
-  // }
 
   menuTrigger3.addEventListener('click', () => {
     menu3.classList.toggle('active')
@@ -197,6 +166,22 @@ function mobileBurger () {
   dropDownList(graphicTrigger, graphicMenu)
 
   dropDownList(languageTrigger, languageMenu)
+
+  // newsBlockListeners
+
+  dropDownList(mensTriggerNews, mensMenuNews)
+  dropDownList(womenTriggerNews, womenMenuNews)
+  dropDownList(kidsTriggerNews, kidsMenuNews)
+
+  // Made in Ukraine Block
+  dropDownList(madeInUkraineMenTrigger, madeInUkraineMenMenu)
+  dropDownList(madeInUkraineWomenTrigger, madeInUkraineWomenMenu)
+  dropDownList(madeInUkraineKidsTrigger, madeInUkraineKidsMenu)
+
+  //  order
+  dropDownList(orderMenList, orderMenMenu)
+  dropDownList(OrderwomenList, orderWomenMenu)
+  dropDownList(OrderKidsList, orderKidsMenu)
 
   function dropDownList (triggerClass, dropDownListClass) {
     triggerClass.forEach(item => {
